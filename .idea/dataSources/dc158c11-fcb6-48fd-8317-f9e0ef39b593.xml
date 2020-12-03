@@ -790,10 +790,10 @@ false posixrules
     <database id="2" parent="1" name="Autotest">
       <ObjectId>24656</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>1158</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1201</IntrospectionStateNumber>
       <Current>1</Current>
-      <Relations>sequence|table|24674|24676|1
-sequence|table|24685|24687|1
+      <Relations>sequence|table|24685|24687|1
+sequence|table|24713|24715|1
 </Relations>
     </database>
     <database id="3" parent="1" name="postgres">
@@ -873,7 +873,7 @@ UC/10
 </Acl>
       <StateNumber>276</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>1159</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1202</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <extension id="19" parent="2" name="plpgsql">
@@ -980,9 +980,9 @@ UC/10
       <DataType>integer|0s</DataType>
     </sequence>
     <sequence id="32" parent="18" name="users_id_seq">
-      <ObjectId>24674</ObjectId>
+      <ObjectId>24713</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>1154</StateNumber>
+      <StateNumber>1197</StateNumber>
       <DataType>integer|0s</DataType>
     </sequence>
     <table id="33" parent="18" name="autos">
@@ -991,9 +991,9 @@ UC/10
       <StateNumber>1157</StateNumber>
     </table>
     <table id="34" parent="18" name="users">
-      <ObjectId>24676</ObjectId>
+      <ObjectId>24715</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>1157</StateNumber>
+      <StateNumber>1200</StateNumber>
     </table>
     <column id="35" parent="33" name="id">
       <Position>1</Position>
@@ -1039,10 +1039,10 @@ UC/10
       <UnderlyingIndexName>autos_pk</UnderlyingIndexName>
     </key>
     <foreign-key id="41" parent="33" name="autos_users_id_fk">
-      <ObjectId>24696</ObjectId>
-      <StateNumber>1157</StateNumber>
+      <ObjectId>24724</ObjectId>
+      <StateNumber>1200</StateNumber>
       <ColNames>user_id</ColNames>
-      <RefTableId>24676</RefTableId>
+      <RefTableId>24715</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>users</RefTableName>
       <RefKeyName>users_pk</RefKeyName>
@@ -1054,25 +1054,25 @@ UC/10
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1154</StateNumber>
+      <StateNumber>1197</StateNumber>
       <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
     <column id="43" parent="34" name="name">
       <Position>2</Position>
       <DataType>varchar|0s</DataType>
-      <StateNumber>1154</StateNumber>
+      <StateNumber>1197</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="44" parent="34" name="age">
       <Position>3</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>1154</StateNumber>
+      <StateNumber>1197</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <index id="45" parent="34" name="users_pk">
-      <ObjectId>24683</ObjectId>
-      <StateNumber>1154</StateNumber>
+      <ObjectId>24722</ObjectId>
+      <StateNumber>1197</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
@@ -1081,8 +1081,8 @@ UC/10
       <ClassIds>1978</ClassIds>
     </index>
     <key id="46" parent="34" name="users_pk">
-      <ObjectId>24684</ObjectId>
-      <StateNumber>1154</StateNumber>
+      <ObjectId>24723</ObjectId>
+      <StateNumber>1197</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>users_pk</UnderlyingIndexName>
